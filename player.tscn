@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bp2ur1lq8o5ha"]
+[gd_scene load_steps=10 format=3 uid="uid://bp2ur1lq8o5ha"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_qiieu"]
 [ext_resource type="Texture2D" uid="uid://csv0v00765vqj" path="res://bazzabogan.png" id="1_uxu5s"]
@@ -6,6 +6,22 @@
 [sub_resource type="AtlasTexture" id="AtlasTexture_1ynxi"]
 atlas = ExtResource("1_uxu5s")
 region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7fhqc"]
+atlas = ExtResource("1_uxu5s")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pvbg0"]
+atlas = ExtResource("1_uxu5s")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_45neb"]
+atlas = ExtResource("1_uxu5s")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ncoh0"]
+atlas = ExtResource("1_uxu5s")
+region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wmljr"]
 animations = [{
@@ -16,6 +32,28 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7fhqc")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pvbg0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_45neb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ncoh0")
+}],
+"loop": true,
+"name": &"run",
+"speed": 9.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2qpcd"]
@@ -27,8 +65,8 @@ script = ExtResource("1_qiieu")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_wmljr")
-animation = &"idle"
+animation = &"run"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -15)
+position = Vector2(1, -18)
 shape = SubResource("CapsuleShape2D_2qpcd")
