@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://wtwm68wts0d1"]
+
+[node name="toad" type="CharacterBody2D"]
