@@ -60,6 +60,7 @@ animations = [{
 height = 36.0
 
 [node name="player" type="CharacterBody2D"]
+texture_filter = 1
 script = ExtResource("1_qiieu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
