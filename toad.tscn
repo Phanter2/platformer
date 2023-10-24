@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://wtwm68wts0d1"]
+[gd_scene load_steps=13 format=3 uid="uid://wtwm68wts0d1"]
 
 [ext_resource type="Texture2D" uid="uid://3e87df6s5t32" path="res://toad.png" id="1_7oaeg"]
+[ext_resource type="Script" path="res://toad.gd" id="1_fik4a"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s5pix"]
 atlas = ExtResource("1_7oaeg")
@@ -66,11 +67,17 @@ animations = [{
 "speed": 4.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_nona6"]
+
 [node name="toad" type="CharacterBody2D"]
 texture_filter = 1
+script = ExtResource("1_fik4a")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_0d2a6")
 animation = &"hop"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -8)
+shape = SubResource("CircleShape2D_nona6")
