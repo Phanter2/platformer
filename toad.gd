@@ -21,4 +21,5 @@ func update_animation():
 
 
 func _on_hitbox_body_entered(body):
-	pass # Replace with function body.
+	if body.is_in_group("Player"):
+		queue_free()
