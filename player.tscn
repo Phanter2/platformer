@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bp2ur1lq8o5ha"]
+[gd_scene load_steps=11 format=3 uid="uid://bp2ur1lq8o5ha"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_qiieu"]
 [ext_resource type="Texture2D" uid="uid://csv0v00765vqj" path="res://bazzabogan.png" id="1_uxu5s"]
@@ -59,6 +59,9 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2qpcd"]
 height = 36.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cqir7"]
+size = Vector2(27, 29)
+
 [node name="player" type="CharacterBody2D"]
 texture_filter = 1
 script = ExtResource("1_qiieu")
@@ -71,3 +74,12 @@ animation = &"run"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -18)
 shape = SubResource("CapsuleShape2D_2qpcd")
+
+[node name="hitbox" type="Area2D" parent="."]
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
+position = Vector2(2.5, -17.5)
+shape = SubResource("RectangleShape2D_cqir7")
+
+[connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]

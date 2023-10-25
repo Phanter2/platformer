@@ -43,4 +43,4 @@ limit_bottom = 650
 position_smoothing_enabled = true
 
 [node name="toad" parent="TileMap" instance=ExtResource("4_v36qi")]
-position = Vector2(517, 446)
+position = Vector2(238, 378)

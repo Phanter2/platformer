@@ -75,6 +75,8 @@ size = Vector2(16, 13)
 
 [node name="toad" type="CharacterBody2D"]
 texture_filter = 1
+collision_layer = 2
+collision_mask = 3
 script = ExtResource("1_fik4a")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -87,6 +89,8 @@ position = Vector2(0, -6)
 shape = SubResource("RectangleShape2D_312hr")
 
 [node name="hitbox" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
 position = Vector2(0, -6.5)
