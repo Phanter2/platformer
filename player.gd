@@ -46,5 +46,5 @@ func update_animation(direction):
 
 
 func _on_hitbox_body_entered(body):
-	if body.is_in_group("enemy"):
+	if body.is_in_group("Enemy"):
 		queue_free()
