@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bl0nbkh7054kx"]
+[gd_scene load_steps=13 format=3 uid="uid://bl0nbkh7054kx"]
 
 [ext_resource type="Texture2D" uid="uid://cjmsj4th0jj1d" path="res://block.png" id="1_h4dtt"]
 [ext_resource type="Script" path="res://world.gd" id="1_qqkn3"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://b71dfsrjth5nc" path="res://toad.tscn" id="4_qq688"]
 [ext_resource type="PackedScene" uid="uid://dotep3e0gt8t1" path="res://big_toad.tscn" id="5_yrlwr"]
 [ext_resource type="PackedScene" uid="uid://djujjx3k6lex5" path="res://coin.tscn" id="6_1e1v5"]
+[ext_resource type="PackedScene" uid="uid://cueaylso5krle" path="res://coin_gui.tscn" id="8_m66en"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r5oha"]
 texture = ExtResource("1_h4dtt")
@@ -83,5 +84,7 @@ position = Vector2(73, 559)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="interact"]
 position = Vector2(560.75, 670)
 shape = SubResource("RectangleShape2D_6e3fw")
+
+[node name="coin_gui" parent="." instance=ExtResource("8_m66en")]
 
 [connection signal="body_entered" from="interact" to="." method="_on_interact_body_entered"]
