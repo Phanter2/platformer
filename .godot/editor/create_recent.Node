@@ -1,9 +1,9 @@
-Camera2D
-ColorRect
-TileMap
 CollisionShape2D
 Area2D
 Label
+Camera2D
+ColorRect
+TileMap
 CanvasLayer
 AudioStreamPlayer2D
 Sprite2D
