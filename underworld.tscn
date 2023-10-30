@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://bd4o3v6lorc1h"]
+
+[ext_resource type="Texture2D" uid="uid://bhvvqv26026pk" path="res://lvl2-block.png" id="1_s1m37"]
+[ext_resource type="Texture2D" uid="uid://boo7f0b1p4sjl" path="res://lvl2-brick.png" id="2_k7dk7"]
+[ext_resource type="PackedScene" uid="uid://dn5q20owy7t16" path="res://player.tscn" id="3_3w238"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_210cp"]
+texture = ExtResource("1_s1m37")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n6saq"]
+texture = ExtResource("2_k7dk7")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_sixic"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_210cp")
+sources/1 = SubResource("TileSetAtlasSource_n6saq")
+
+[node name="underworld" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_sixic")
+format = 2
+layer_0/tile_data = PackedInt32Array(2621440, 0, 0, 2621441, 0, 0, 2621442, 0, 0, 2621443, 0, 0, 2621444, 0, 0, 2621445, 0, 0, 2621446, 0, 0, 2621447, 0, 0, 2621448, 0, 0, 2621449, 0, 0, 2621450, 0, 0, 2621451, 0, 0, 2621452, 0, 0, 2621453, 0, 0, 2621454, 0, 0, 2621455, 0, 0, 2621456, 0, 0, 2621457, 0, 0, 2621458, 0, 0, 2621459, 0, 0, 2621460, 0, 0, 2621461, 0, 0, 2621462, 0, 0, 2621463, 0, 0, 2621464, 0, 0, 2621465, 0, 0, 2621466, 0, 0, 2621467, 0, 0, 2621468, 0, 0, 2621469, 0, 0, 2621470, 0, 0, 2621471, 0, 0, 2621472, 0, 0, 2621473, 0, 0, 2621474, 0, 0, 2621475, 0, 0, 2621480, 0, 0, 2621481, 0, 0, 2621482, 0, 0, 2621483, 0, 0, 2621484, 0, 0, 2621485, 0, 0, 2621486, 0, 0, 2621487, 0, 0, 2621488, 0, 0, 2621489, 0, 0, 2621490, 0, 0, 2621491, 0, 0, 2621492, 0, 0, 2621493, 0, 0, 2621494, 0, 0, 2621495, 0, 0, 2621496, 0, 0, 2621497, 0, 0, 2621498, 0, 0, 2621499, 0, 0, 2621500, 0, 0, 2621501, 0, 0, 2621502, 0, 0, 2621503, 0, 0, 2621504, 0, 0, 2621505, 0, 0, 2621506, 0, 0, 2621507, 0, 0, 2621508, 0, 0, 2621509, 0, 0, 2621510, 0, 0, 2621511, 0, 0, 2621512, 0, 0, 2621513, 0, 0, 2621514, 0, 0, 2621515, 0, 0, 2621516, 0, 0, 2621517, 0, 0, 2621518, 0, 0, 2621519, 0, 0, 2621520, 0, 0, 2621521, 0, 0, 2621522, 0, 0, 2621523, 0, 0, 2621524, 0, 0, 2621525, 0, 0, 2621526, 0, 0, 2621527, 0, 0, 2621528, 0, 0, 2621529, 0, 0, 2621530, 0, 0, 2621531, 0, 0, 2621532, 0, 0, 2621533, 0, 0, 2621534, 0, 0, 2555904, 1, 0, 2490368, 1, 0, 2424832, 1, 0, 2359296, 1, 0, 2293760, 1, 0, 2228224, 1, 0, 2162688, 1, 0, 2097152, 1, 0, 2031616, 1, 0, 2555926, 1, 0, 2490390, 1, 0, 2424854, 1, 0, 2359318, 1, 0, 2555920, 1, 0, 2490384, 1, 0, 2555939, 1, 0, 2490403, 1, 0, 2424867, 1, 0, 2359331, 1, 0, 2293795, 1, 0, 2228259, 1, 0, 2359330, 1, 0, 2424866, 1, 0, 2490402, 1, 0, 2555938, 1, 0, 2424865, 1, 0, 2490401, 1, 0, 2555937, 1, 0, 2490400, 1, 0, 2555936, 1, 0, 2228264, 1, 0, 2293800, 1, 0, 2359336, 1, 0, 2424872, 1, 0, 2490408, 1, 0, 2555944, 1, 0, 2359337, 1, 0, 2424873, 1, 0, 2490409, 1, 0, 2555945, 1, 0, 2424874, 1, 0, 2490410, 1, 0, 2555946, 1, 0, 2490411, 1, 0, 2555947, 1, 0)
+
+[node name="player" parent="TileMap" instance=ExtResource("3_3w238")]
+position = Vector2(43, 630)
+
+[node name="Camera2D" type="Camera2D" parent="TileMap/player"]
+zoom = Vector2(3, 3)
+limit_left = 0
+limit_top = 0
+limit_right = 1550
+limit_bottom = 650
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -1
+offset_right = 1528.0
+offset_bottom = 789.0
+color = Color(0, 0, 0.2, 1)
