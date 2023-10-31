@@ -5,3 +5,5 @@ res://big_toad.tscn
 res://coin.tscn
 res://coin_gui.tscn
 res://underworld.tscn
+res://start.tscn
+res://gameover.tscn
