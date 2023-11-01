@@ -1,9 +1,7 @@
 res://world.tscn
 res://player.tscn
-res://toad.tscn
-res://big_toad.tscn
-res://coin.tscn
-res://coin_gui.tscn
-res://underworld.tscn
-res://start.tscn
-res://gameover.tscn
+res://questionblock.gd
+res://questionblock.tscn
+res://global.gd
+res://beer.gd
+res://beer.tscn
