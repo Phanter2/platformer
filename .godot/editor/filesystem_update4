@@ -1,7 +1,6 @@
 res://world.tscn
 res://player.tscn
-res://questionblock.gd
 res://questionblock.tscn
-res://global.gd
-res://beer.gd
 res://beer.tscn
+res://player.gd
+res://beer.gd
