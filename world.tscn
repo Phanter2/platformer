@@ -109,7 +109,25 @@ position = Vector2(-18, 3)
 shape = SubResource("CircleShape2D_t22he")
 
 [node name="questionblock" parent="." instance=ExtResource("10_yt54o")]
-position = Vector2(32, 575)
+position = Vector2(68, 574)
+
+[node name="questionblock2" parent="." instance=ExtResource("10_yt54o")]
+position = Vector2(144, 505)
+
+[node name="questionblock3" parent="." instance=ExtResource("10_yt54o")]
+position = Vector2(250, 520)
+
+[node name="questionblock4" parent="." instance=ExtResource("10_yt54o")]
+position = Vector2(213, 560)
+
+[node name="questionblock5" parent="." instance=ExtResource("10_yt54o")]
+position = Vector2(13, 575)
+
+[node name="questionblock6" parent="." instance=ExtResource("10_yt54o")]
+position = Vector2(527, 475)
+
+[node name="questionblock7" parent="." instance=ExtResource("10_yt54o")]
+position = Vector2(610, 570)
 
 [connection signal="body_entered" from="interact" to="." method="_on_interact_body_entered"]
 [connection signal="body_entered" from="transition" to="." method="_on_transition_body_entered"]

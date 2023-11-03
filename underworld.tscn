@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://bd4o3v6lorc1h"]
+[gd_scene load_steps=10 format=3 uid="uid://bd4o3v6lorc1h"]
 
 [ext_resource type="Texture2D" uid="uid://bhvvqv26026pk" path="res://lvl2-block.png" id="1_s1m37"]
 [ext_resource type="Texture2D" uid="uid://boo7f0b1p4sjl" path="res://lvl2-brick.png" id="2_k7dk7"]
 [ext_resource type="PackedScene" uid="uid://dn5q20owy7t16" path="res://player.tscn" id="3_3w238"]
 [ext_resource type="PackedScene" uid="uid://cueaylso5krle" path="res://coin_gui.tscn" id="4_0anln"]
+[ext_resource type="PackedScene" uid="uid://b71dfsrjth5nc" path="res://toad.tscn" id="5_q1y8e"]
+[ext_resource type="PackedScene" uid="uid://dxnc7406n0sf0" path="res://questionblock.tscn" id="6_b35sc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_210cp"]
 texture = ExtResource("1_s1m37")
@@ -48,3 +50,15 @@ offset_bottom = 789.0
 color = Color(0, 0, 0.2, 1)
 
 [node name="coin_gui" parent="." instance=ExtResource("4_0anln")]
+
+[node name="toad" parent="." instance=ExtResource("5_q1y8e")]
+position = Vector2(896, 637)
+
+[node name="toad2" parent="." instance=ExtResource("5_q1y8e")]
+position = Vector2(497, 639)
+
+[node name="questionblock" parent="." instance=ExtResource("6_b35sc")]
+position = Vector2(153, 579)
+
+[node name="questionblock2" parent="." instance=ExtResource("6_b35sc")]
+position = Vector2(430, 547)

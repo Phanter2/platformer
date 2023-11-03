@@ -1,6 +1,12 @@
-res://world.tscn
 res://player.tscn
+res://player.gd
+res://world.tscn
 res://questionblock.tscn
 res://beer.tscn
-res://player.gd
-res://beer.gd
+res://thong.tscn
+res://thong_power_up.tscn
+res://toad.tscn
+res://underworld.tscn
+res://global.gd
+res://questionblock.gd
+res://thong_power_up.gd

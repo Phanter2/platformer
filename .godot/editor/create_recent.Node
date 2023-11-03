@@ -1,5 +1,8 @@
+Timer
 CollisionShape2D
 Area2D
+RayCast2D
+AnimatedSprite2D
 Sprite2D
 CharacterBody2D
 StaticBody2D
@@ -11,6 +14,3 @@ Camera2D
 ColorRect
 TileMap
 AudioStreamPlayer2D
-RayCast2D
-AnimatedSprite2D
-Timer
