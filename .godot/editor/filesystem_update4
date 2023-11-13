@@ -1,12 +1,11 @@
-res://player.tscn
-res://player.gd
 res://world.tscn
+res://player.tscn
 res://questionblock.tscn
 res://beer.tscn
-res://thong.tscn
-res://thong_power_up.tscn
-res://toad.tscn
 res://underworld.tscn
-res://global.gd
-res://questionblock.gd
-res://thong_power_up.gd
+res://another world.tscn
+res://player.gd
+res://gameover.tscn
+res://coin_gui.tscn
+res://big_toad.tscn
+res://ANOTHER.tscn

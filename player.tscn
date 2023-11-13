@@ -8,7 +8,7 @@
 atlas = ExtResource("1_bp78a")
 region = Rect2(160, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_o58n8"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ke1i"]
 atlas = ExtResource("1_bp78a")
 region = Rect2(0, 0, 32, 32)
 
@@ -16,15 +16,15 @@ region = Rect2(0, 0, 32, 32)
 atlas = ExtResource("1_bp78a")
 region = Rect2(128, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_u8iw6"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_478tx"]
 atlas = ExtResource("1_bp78a")
 region = Rect2(32, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_okp3a"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_g0nqf"]
 atlas = ExtResource("1_bp78a")
 region = Rect2(64, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_7h73p"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_kpus1"]
 atlas = ExtResource("1_bp78a")
 region = Rect2(96, 0, 32, 32)
 
@@ -72,7 +72,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_o58n8")
+"texture": SubResource("AtlasTexture_2ke1i")
 }],
 "loop": true,
 "name": &"idle",
@@ -88,13 +88,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_u8iw6")
+"texture": SubResource("AtlasTexture_478tx")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_okp3a")
+"texture": SubResource("AtlasTexture_g0nqf")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_7h73p")
+"texture": SubResource("AtlasTexture_kpus1")
 }],
 "loop": true,
 "name": &"run",
@@ -158,9 +158,10 @@ size = Vector2(30, 5)
 script = ExtResource("1_giqtn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -16)
+position = Vector2(0, -11)
+scale = Vector2(0.859375, 0.640625)
 sprite_frames = SubResource("SpriteFrames_v6iqx")
-animation = &"thong_fire"
+animation = &"run"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -16)
@@ -170,7 +171,7 @@ shape = SubResource("CapsuleShape2D_64786")
 collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
-position = Vector2(2.5, -17.5)
+position = Vector2(1, -16)
 shape = SubResource("RectangleShape2D_7yd5u")
 
 [node name="feet" type="Area2D" parent="."]

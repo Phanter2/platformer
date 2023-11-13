@@ -7,7 +7,7 @@ var is_jumping = false
 var is_big = false
 var can_fire_thong = false
 const SPEED = 300.0
-const JUMP_VELOCITY = -600.0
+const JUMP_VELOCITY = -450.0
 var player_direction = 1
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
